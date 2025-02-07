@@ -3,29 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Containerization in Flask</title>
+    <title>Containerization Technologies</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px 0px #aaa;
         }
-        h1 {
+        h1, h2 {
             color: #333;
+            text-align: center;
         }
         p {
-            text-align: left;
             font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .tech-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .tech-card img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .tech-card h3 {
+            margin: 10px 0;
+            color: #444;
+        }
+        .tech-card p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .vm-container-diff {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-left: 5px solid #007bff;
+        }
+        .vm-container-diff h2 {
+            text-align: center;
+        }
+        .vm-container-diff ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .vm-container-diff li {
+            font-size: 18px;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .vm-container-diff li:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .tech-card p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -35,13 +94,45 @@
         <p>Containerization is a lightweight virtualization method that allows applications to be packaged with their 
             dependencies into isolated environments called containers.</p>
 
-        <h2>Use Cases of Containerization</h2>
-        <ul>
-            <li><strong>Microservices:</strong> Deploy independent services efficiently.</li>
-            <li><strong>Scalability:</strong> Scale applications dynamically.</li>
-            <li><strong>CI/CD:</strong> Automate testing and deployment.</li>
-            <li><strong>Portability:</strong> Run applications consistently across environments.</li>
-        </ul>
+        <h2>Popular Containerization Technologies</h2>
+        <div class="tech-grid">
+            <!-- Docker -->
+            <div class="tech-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo">
+                <h3>Docker</h3>
+                <p>Docker is an open-source platform for building, shipping, and running containers.</p>
+            </div>
+            <!-- Kubernetes -->
+            <div class="tech-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
+                <h3>Kubernetes</h3>
+                <p>Kubernetes is an open-source container orchestration platform for managing large-scale container deployments.</p>
+            </div>
+            <!-- Podman -->
+            <div class="tech-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Podman_Logo.svg" alt="Podman Logo">
+                <h3>Podman</h3>
+                <p>Podman is a container management tool that allows running rootless containers with enhanced security.</p>
+            </div>
+            <!-- OpenShift -->
+            <div class="tech-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/OpenShift-LogoType.svg" alt="OpenShift Logo">
+                <h3>OpenShift</h3>
+                <p>OpenShift is an enterprise Kubernetes distribution with built-in developer tools and CI/CD integration.</p>
+            </div>
+        </div>
+
+        <!-- Difference Between Containers & Virtual Machines -->
+        <div class="vm-container-diff">
+            <h2>Containerization vs Virtual Machines</h2>
+            <ul>
+                <li><strong>Lightweight:</strong> Containers share the OS kernel, making them more efficient than VMs.</li>
+                <li><strong>Startup Time:</strong> Containers start in milliseconds, while VMs take seconds to minutes.</li>
+                <li><strong>Portability:</strong> Containers run the same way on any OS, but VMs depend on the host OS.</li>
+                <li><strong>Resource Efficiency:</strong> Containers use fewer system resources compared to VMs.</li>
+                <li><strong>Isolation:</strong> VMs provide full isolation, while containers offer lightweight isolation.</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

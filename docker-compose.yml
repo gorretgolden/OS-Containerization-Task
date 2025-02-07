@@ -8,7 +8,5 @@ services:
     environment:
       - FLASK_ENV=development
     volumes:
-      - .:/app
-    # Uncomment below if you want to keep the container running even after you exit
-    # stdin_open: true
-    # tty: true
+      - .:/app  # Mounting the local project folder into the container
+    command: flask run --host=0.0.0.0 --port=5000 --reload
