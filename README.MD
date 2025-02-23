@@ -2,7 +2,7 @@ Flask UI Application with Docker and Kubernetes
 
 Project Overview
 
-This project is a simple Flask web application that demonstrates containerization using Docker and Kubernetes. The application displays a UI explaining containerization, its use cases, and related technologies.
+This project is a simple Flask web application that demonstrates containerization using Docker and Kubernetes. The application displays a UI explaining containerization and  its related technologies.
 
 The project is fully containerized with Docker, allowing it to be easily deployed on different environments. Kubernetes is used for container orchestration, ensuring scalability and high availability.
 
