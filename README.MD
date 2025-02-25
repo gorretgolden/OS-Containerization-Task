@@ -76,7 +76,7 @@ docker-compose up --build
 
 #### **3. Run the Container:**
 ```sh
-docker run -p 5000:5000 flask-ui-app
+docker compose up
 ```
 
 #### **4. Deploy to Kubernetes:**
