@@ -80,13 +80,18 @@ docker build -t os-task-one .
 docker-compose up --build -d
 
 ```
+#### **4. Run the flask app:**
+```sh
+docker run  os-task-one
 
-#### **4. Deploy to Kubernetes:**
+```
+
+#### **5. Deploy to Kubernetes:**
 ```sh
 kubectl apply -f deployment.yaml
 ```
 
-#### **5. Access the Application:**
+#### **6. Access the Application:**
 Open your browser and navigate to:
 ```
 http://localhost:5000

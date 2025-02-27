@@ -1,29 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-ui-app
+  name: os-task-one
 spec:
-  replicas: 2  # Number of instances of the app 
+  replicas: 1  # Number of instances of the app 
   selector:
     matchLabels:
-      app: flask-ui-app
+      app: os-task-one
   template:
     metadata:
       labels:
-        app: flask-ui-app
+        app: os-task-one
     spec:
       containers:
-      - name: flask-ui-container
-        image: flask-ui-app:latest  
-        - containerPort: 5000
----
+      - name: os-task-one
+        image: gorret/os-task-one  
+      - containerPort: 5000
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: flask-ui-service
+  name: os-task-one-service
 spec:
   selector:
-    app: flask-ui-app
+    app: os-task-one
   ports:
     - protocol: TCP
       port: 80
