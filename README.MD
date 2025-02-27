@@ -71,7 +71,8 @@ cd OS-Containerization-Task
 
 #### **2. Build the Docker Image:**
 ```sh
-docker-compose up --build
+docker build -t os-task-one .
+
 ```
 
 #### **3. Run the Container:**
