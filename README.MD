@@ -77,7 +77,8 @@ docker build -t os-task-one .
 
 #### **3. Run the Container:**
 ```sh
-docker compose up
+docker-compose up --build -d
+
 ```
 
 #### **4. Deploy to Kubernetes:**
