@@ -1,4 +1,4 @@
-# Flask UI Application with Docker and Kubernetes
+# Flask Web Application about Containerization
 
 ## Project Overview
 
