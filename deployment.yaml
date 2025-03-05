@@ -14,8 +14,18 @@ spec:
     spec:
       containers:
       - name: os-task-one
-        image: gorret/os-task-one  
-      - containerPort: 5000
+        image: gorret/os-task-one:latest  # Ensure the tag is correct
+        ports:
+          - containerPort: 5000
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+
+---
 
 apiVersion: v1
 kind: Service
@@ -28,4 +38,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 5000
-  type: LoadBalancer  
+  type: LoadBalancer  # Exposes the Flask app
