@@ -103,5 +103,5 @@ http://localhost:5000
 This project showcases **containerization** using Docker and Kubernetes. By leveraging these technologies, applications become **portable, scalable, and easier to manage**. 🚀
 
 #### ****
-![Screenshot Description](./images/screenshoot-1.png)
-![Screenshot Description](./images/screenshoot2.png)
+![Screenshot 1](./images/screenshoot-1.png)
+![Screenshot 2](./images/screenshoot-2.png)
