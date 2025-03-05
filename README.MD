@@ -104,4 +104,4 @@ This project showcases **containerization** using Docker and Kubernetes. By leve
 
 #### ****
 ![Screenshot Description](./images/screenshoot-1.png)
-![Screenshot Description](./images/screenshot2.png)
+![Screenshot Description](./images/screenshoot2.png)
