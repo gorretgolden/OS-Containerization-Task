@@ -1,7 +1,7 @@
 # Using the official Python image
 FROM python:3.9
 
-# Set the working directory
+# Setting the working directory
 WORKDIR /app
 
 # Copying the application files
@@ -12,9 +12,9 @@ RUN pip install flask
 
 #Disenabling flask warnings
 ENV FLASK_RUN_OPTIONS="--without-threads"
+
+#Setting environment to production
 ENV FLASK_ENV=production
-
-
 
 # Listening and Exposing port 5000
 EXPOSE 5000

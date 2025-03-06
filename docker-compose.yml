@@ -4,11 +4,11 @@ services:
   web:
     container_name: os-task-one-container
     build: .
-    image: os-task-one  # Assign the image name
+    image: os-task-one  # Assigning the image name
     ports:
       - "5000:5000"
     environment:
-      - FLASK_ENV=development
+      - FLASK_ENV=production
     volumes:
       - .:/app  # Mounting the local project folder into the container
     command: flask run --host=0.0.0.0 --port=5000 --reload

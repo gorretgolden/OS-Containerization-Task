@@ -65,13 +65,13 @@ Ensure you have the following installed:
 
 #### **1. Clone the Repository:**
 ```sh
-git clone https://github.com/gorretgolden/OS-Containerization-Task
+git clone https://github.com/gorretgolden/OS-Containerization-Task/tree/master
 cd OS-Containerization-Task
 ```
 
 #### **2. Build the Docker Image:**
 ```sh
-docker build -t os-task-one .
+docker build -t os-task-one:v1 .
 
 ```
 
