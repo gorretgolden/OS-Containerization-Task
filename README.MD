@@ -108,3 +108,6 @@ This project showcases **containerization** using Docker and Kubernetes. By leve
 ![Docker Desktop Screenshot](./images/docker-desktop.png)
 ![Project container](./images/os-task-image-docker.png)
 ![Docker Hub site](./images/docker-hub.png)
+![Kubernates dashboard](./images/kubernates-dashboard1.png)
+![Kubernates deployed app](./images/kubernates-deployed-image.png)
+
