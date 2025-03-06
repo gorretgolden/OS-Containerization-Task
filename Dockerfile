@@ -12,6 +12,8 @@ RUN pip install flask
 
 #Disenabling flask warnings
 ENV FLASK_RUN_OPTIONS="--without-threads"
+ENV FLASK_ENV=production
+
 
 
 # Listening and Exposing port 5000
