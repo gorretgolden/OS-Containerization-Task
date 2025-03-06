@@ -10,6 +10,10 @@ COPY . /app
 # Installing dependencies
 RUN pip install flask
 
+#Disenabling flask warnings
+ENV FLASK_RUN_OPTIONS="--without-threads"
+
+
 # Listening and Exposing port 5000
 EXPOSE 5000
 
